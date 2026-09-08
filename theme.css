@@ -17,3 +17,12 @@
 .process-step em{display:block;margin-top:18px;color:var(--accent-2);font-size:.82rem;font-style:normal;font-weight:800}
 .detail-link{display:inline-flex;margin-top:14px;color:var(--accent-2);font-size:.88rem;font-weight:800;border-bottom:1px solid rgba(131,197,232,.45)}
 .detail-link:hover{color:#fff}
+
+/* Portada renovada + flechas simples */
+.hero{grid-template-columns:1fr 1.08fr;gap:46px}
+.hero-board{padding:16px 18px;background:linear-gradient(145deg,#143552,#10253b);border:1px solid var(--line);border-radius:32px;box-shadow:var(--shadow);min-height:420px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-graphic{width:100%;max-width:760px;height:auto;display:block}
+.detail-link.arrow-only{display:inline-grid;place-items:center;margin-top:16px;width:42px;height:42px;border-radius:999px;border:1px solid rgba(131,197,232,.48);background:rgba(26,61,92,.8);color:var(--accent-2);font-size:1.3rem;font-weight:900;line-height:1;text-decoration:none;transition:transform .18s ease,background .18s ease,border-color .18s ease,color .18s ease,box-shadow .18s ease}
+.detail-link.arrow-only:hover{transform:translateY(-2px);background:rgba(90,169,230,.16);border-color:var(--accent);color:#fff;box-shadow:0 10px 22px rgba(0,0,0,.2)}
+@media(max-width:1050px){.hero{grid-template-columns:1fr;}.hero-board{min-height:auto}}
+@media(max-width:720px){.hero-actions{flex-wrap:wrap}.hero-board{padding:12px;border-radius:24px}}
