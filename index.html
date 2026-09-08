@@ -14,9 +14,10 @@
     <a class="brand" href="#inicio" aria-label="Ir al inicio">Ctrl+Estudio</a>
     <nav class="nav" aria-label="Navegación principal">
       <a href="#inicio">Inicio</a>
-      <a href="#integrantes">Integrantes</a>
+      <a href="#integrantes">Desarrollo</a>
       <a href="#caso">Caso práctico</a>
       <a href="#integracion">Integración</a>
+      <a href="#equipo">Equipo</a>
     </nav>
   </header>
 
@@ -36,22 +37,90 @@
 
         <div class="hero-actions">
           <a class="btn primary" href="#integrantes">Comenzar presentación</a>
-          <a class="btn ghost" href="#integrantes">Ver integrantes</a>
+          <a class="btn ghost" href="#equipo">Ver integrantes</a>
         </div>
       </div>
 
-      <div class="hero-visual reveal" aria-hidden="true">
-        <div class="orbit orbit-a"></div>
-        <div class="orbit orbit-b"></div>
-        <div class="visual-core">
-          <span class="mini-label">Sistema de Información</span>
-          <strong>Compras</strong>
-          <span>→</span>
-          <strong>Pagos</strong>
-        </div>
-        <div class="floating-card fc-1">Proveedor</div>
-        <div class="floating-card fc-2">Tesorería</div>
-        <div class="floating-card fc-3">Contabilidad</div>
+      <div class="hero-visual hero-board reveal" aria-hidden="true">
+        <svg class="hero-graphic" viewBox="0 0 760 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Escena ilustrada del ciclo de compras y pagos con comercio, camión, factura y calculadora">
+          <defs>
+            <linearGradient id="panelBlue" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#173a59"/>
+              <stop offset="100%" stop-color="#112840"/>
+            </linearGradient>
+            <linearGradient id="panelGreen" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1d5a47"/>
+              <stop offset="100%" stop-color="#18392f"/>
+            </linearGradient>
+            <linearGradient id="panelRed" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#5a2c35"/>
+              <stop offset="100%" stop-color="#3f2028"/>
+            </linearGradient>
+            <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#06121f" flood-opacity="0.4"/>
+            </filter>
+          </defs>
+
+          <rect x="22" y="20" width="716" height="480" rx="30" fill="url(#panelBlue)" stroke="#2f5574" />
+          <circle cx="382" cy="257" r="118" fill="#173f63" stroke="#406b8d" opacity="0.88"/>
+          <circle cx="382" cy="257" r="82" fill="#224e75" stroke="#5a95be" opacity="0.95"/>
+          <text x="382" y="230" text-anchor="middle" fill="#eaf4fb" font-size="18" font-family="Arial, sans-serif" letter-spacing="2">CICLO</text>
+          <text x="382" y="262" text-anchor="middle" fill="#ffffff" font-size="30" font-weight="700" font-family="Arial, sans-serif">Compras</text>
+          <text x="382" y="301" text-anchor="middle" fill="#ffffff" font-size="30" font-weight="700" font-family="Arial, sans-serif">y Pagos</text>
+
+          <path d="M265 178 C220 155, 185 145, 150 145" fill="none" stroke="#6db0dc" stroke-width="4" stroke-linecap="round"/>
+          <path d="M496 184 C545 160, 580 154, 626 160" fill="none" stroke="#6cc79a" stroke-width="4" stroke-linecap="round"/>
+          <path d="M270 339 C215 365, 180 375, 136 377" fill="none" stroke="#ef8a8f" stroke-width="4" stroke-linecap="round"/>
+          <path d="M492 337 C545 360, 585 368, 629 370" fill="none" stroke="#6db0dc" stroke-width="4" stroke-linecap="round"/>
+
+          <g filter="url(#shadow)">
+            <rect x="68" y="92" width="154" height="112" rx="22" fill="url(#panelBlue)" stroke="#4878a0"/>
+            <rect x="90" y="114" width="110" height="20" rx="6" fill="#9fd2f0"/>
+            <rect x="86" y="132" width="118" height="15" rx="4" fill="#5aa9e6"/>
+            <rect x="94" y="149" width="102" height="38" rx="8" fill="#f3f8fc" opacity="0.94"/>
+            <rect x="105" y="157" width="22" height="30" rx="3" fill="#85bde0"/>
+            <rect x="134" y="157" width="22" height="30" rx="3" fill="#85bde0"/>
+            <rect x="163" y="157" width="22" height="30" rx="3" fill="#85bde0"/>
+            <text x="145" y="108" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="700" font-family="Arial, sans-serif">Comercio</text>
+          </g>
+
+          <g filter="url(#shadow)">
+            <rect x="534" y="100" width="158" height="116" rx="22" fill="url(#panelGreen)" stroke="#3f7a62"/>
+            <rect x="562" y="146" width="58" height="30" rx="6" fill="#9ee4b8"/>
+            <path d="M620 151 h28 l18 17 v8 h-46 z" fill="#6fd29a"/>
+            <circle cx="578" cy="182" r="10" fill="#0f263a" stroke="#98e0b4" stroke-width="4"/>
+            <circle cx="644" cy="182" r="10" fill="#0f263a" stroke="#98e0b4" stroke-width="4"/>
+            <text x="613" y="118" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="700" font-family="Arial, sans-serif">Entrega</text>
+            <text x="613" y="136" text-anchor="middle" fill="#b7f1ca" font-size="14" font-family="Arial, sans-serif">Camión · proveedor</text>
+          </g>
+
+          <g filter="url(#shadow)">
+            <rect x="60" y="315" width="168" height="120" rx="22" fill="url(#panelRed)" stroke="#86525a"/>
+            <rect x="92" y="338" width="105" height="75" rx="10" fill="#f8fbfd"/>
+            <path d="M176 338 l21 0 l0 18" fill="#dfe9f1"/>
+            <line x1="104" y1="358" x2="185" y2="358" stroke="#96aec0" stroke-width="6" stroke-linecap="round"/>
+            <line x1="104" y1="376" x2="172" y2="376" stroke="#96aec0" stroke-width="6" stroke-linecap="round"/>
+            <line x1="104" y1="394" x2="164" y2="394" stroke="#96aec0" stroke-width="6" stroke-linecap="round"/>
+            <text x="144" y="334" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="700" font-family="Arial, sans-serif">Factura</text>
+          </g>
+
+          <g filter="url(#shadow)">
+            <rect x="529" y="308" width="167" height="127" rx="22" fill="url(#panelBlue)" stroke="#4878a0"/>
+            <rect x="574" y="333" width="76" height="28" rx="7" fill="#eaf4fb"/>
+            <g fill="#7ab8df">
+              <rect x="570" y="373" width="18" height="18" rx="4"/>
+              <rect x="594" y="373" width="18" height="18" rx="4"/>
+              <rect x="618" y="373" width="18" height="18" rx="4"/>
+              <rect x="642" y="373" width="18" height="18" rx="4"/>
+              <rect x="570" y="397" width="18" height="18" rx="4"/>
+              <rect x="594" y="397" width="18" height="18" rx="4"/>
+              <rect x="618" y="397" width="18" height="18" rx="4"/>
+              <rect x="642" y="397" width="18" height="18" rx="4"/>
+            </g>
+            <text x="612" y="326" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="700" font-family="Arial, sans-serif">Control</text>
+            <text x="612" y="348" text-anchor="middle" fill="#b9dff5" font-size="14" font-family="Arial, sans-serif">Calculadora · pagos</text>
+          </g>
+        </svg>
       </div>
     </section>
 
@@ -68,8 +137,7 @@
           <div class="speaker-main">
             <div class="speaker-title"><div><h3>Introducción al ciclo de compras y pagos</h3></div><span class="tag">Inicio</span></div>
             <p>Presenta el alcance general del ciclo: desde la detección de una necesidad hasta el pago al proveedor y la actualización de la información.</p>
-            <div class="concepts"><span>Necesidad</span><span>Compra</span><span>Recepción</span><span>Obligación</span><span>Pago</span></div>
-            <a class="detail-link" href="detalle-introduccion.html" aria-label="Abrir detalle de introducción">→</a>
+            <div class="concepts"><span>Necesidad</span><span>Compra</span><span>Recepción</span><span>Obligación</span><span>Pago</span></div><a class="detail-link arrow-only" href="detalle-introduccion.html" aria-label="Abrir apoyo visual de Introducción">→</a>
           </div>
           <div class="speaker-visual visual-chain" aria-hidden="true"><b>Necesidad</b><i></i><b>Pago</b></div>
         </article>
@@ -79,8 +147,7 @@
           <div class="speaker-main">
             <div class="speaker-title"><div><h3>Gestión de pagos</h3></div><span class="tag">Control</span></div>
             <p>Explica cómo se organizan las obligaciones, los vencimientos y las verificaciones previas para pagar correctamente y en el momento adecuado.</p>
-            <div class="concepts"><span>Factura</span><span>Vencimiento</span><span>Control</span><span>Condiciones</span></div>
-            <a class="detail-link" href="detalle-pagos.html" aria-label="Abrir detalle de gestión de pagos">→</a>
+            <div class="concepts"><span>Factura</span><span>Vencimiento</span><span>Control</span><span>Condiciones</span></div><a class="detail-link arrow-only" href="detalle-pagos.html" aria-label="Abrir apoyo visual de Gestión de pagos">→</a>
           </div>
           <div class="speaker-visual mini-calendar" aria-hidden="true"><span>30</span><small>días</small></div>
         </article>
@@ -90,8 +157,7 @@
           <div class="speaker-main">
             <div class="speaker-title"><div><h3>Cuenta corriente de proveedores</h3></div><span class="tag">Registro</span></div>
             <p>Muestra cómo se registran facturas, pagos, notas de crédito y débito, y cómo se obtiene el saldo pendiente de cada proveedor.</p>
-            <div class="concepts"><span>Facturas</span><span>Pagos</span><span>NC / ND</span><span>Saldo</span></div>
-            <a class="detail-link" href="detalle-cuenta.html" aria-label="Abrir detalle de cuenta corriente">→</a>
+            <div class="concepts"><span>Facturas</span><span>Pagos</span><span>NC / ND</span><span>Saldo</span></div><a class="detail-link arrow-only" href="detalle-cuenta.html" aria-label="Abrir apoyo visual de Cuenta corriente">→</a>
           </div>
           <div class="speaker-visual ledger" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
         </article>
@@ -101,8 +167,7 @@
           <div class="speaker-main">
             <div class="speaker-title"><div><h3>Órdenes de pago</h3></div><span class="tag">Autorización</span></div>
             <p>Desarrolla la función de la orden de pago como respaldo formal de la operación, incluyendo proveedor, importe, fecha, concepto y medio de pago.</p>
-            <div class="concepts"><span>Autorización</span><span>Respaldo</span><span>Importe</span><span>Proveedor</span></div>
-            <a class="detail-link" href="detalle-orden.html" aria-label="Abrir detalle de órdenes de pago">→</a>
+            <div class="concepts"><span>Autorización</span><span>Respaldo</span><span>Importe</span><span>Proveedor</span></div><a class="detail-link arrow-only" href="detalle-orden.html" aria-label="Abrir apoyo visual de Órdenes de pago">→</a>
           </div>
           <div class="speaker-visual approval" aria-hidden="true"><span>✓</span><small>Autorizado</small></div>
         </article>
@@ -112,8 +177,7 @@
           <div class="speaker-main">
             <div class="speaker-title"><div><h3>Medios de pago y flujo de caja</h3></div><span class="tag">Liquidez</span></div>
             <p>Relaciona la elección del medio de pago con las salidas de dinero y con la necesidad de conservar liquidez para sostener las operaciones.</p>
-            <div class="concepts"><span>Transferencia</span><span>Cheque</span><span>Efectivo</span><span>Flujo de caja</span></div>
-            <a class="detail-link" href="detalle-medios.html" aria-label="Abrir detalle de medios de pago y flujo de caja">→</a>
+            <div class="concepts"><span>Transferencia</span><span>Cheque</span><span>Efectivo</span><span>Flujo de caja</span></div><a class="detail-link arrow-only" href="detalle-medios.html" aria-label="Abrir apoyo visual de Medios de pago y flujo de caja">→</a>
           </div>
           <div class="speaker-visual cashflow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
         </article>
@@ -123,8 +187,7 @@
           <div class="speaker-main">
             <div class="speaker-title"><div><h3>Integración de los ciclos y Sistema de Información</h3></div><span class="tag">Cierre</span></div>
             <p>Integra compras, proveedores, tesorería y contabilidad para mostrar cómo un mismo dato debe mantenerse coherente y actualizado en toda la organización.</p>
-            <div class="concepts"><span>Integración</span><span>Datos</span><span>Tesorería</span><span>Contabilidad</span><span>SI</span></div>
-            <a class="detail-link" href="detalle-integracion.html" aria-label="Abrir detalle de integración del sistema de información">→</a>
+            <div class="concepts"><span>Integración</span><span>Datos</span><span>Tesorería</span><span>Contabilidad</span><span>SI</span></div><a class="detail-link arrow-only" href="detalle-integracion.html" aria-label="Abrir apoyo visual de Integración">→</a>
           </div>
           <div class="speaker-visual network" aria-hidden="true"><span></span><span></span><span></span><span></span><b></b></div>
         </article>
