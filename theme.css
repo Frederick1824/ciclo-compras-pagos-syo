@@ -59,3 +59,9 @@
 .speaker:nth-child(3) .speaker-entry-arrow,.speaker:nth-child(6) .speaker-entry-arrow{border-color:rgba(239,111,115,.48);background:rgba(239,111,115,.11)}
 @media(max-width:900px){.speaker{grid-template-columns:82px 1fr}.speaker-visual{grid-column:2}.speaker-entry{width:68px;min-height:108px}.speaker-entry-no{font-size:1.95rem}}
 @media(max-width:640px){.speaker{grid-template-columns:1fr;padding:22px}.speaker-entry{width:100%;min-height:66px;flex-direction:row;justify-content:space-between;padding:10px 16px}.speaker-entry-no{font-size:1.8rem}.speaker-entry-arrow{width:38px;height:38px}.speaker-visual{grid-column:auto}}
+
+/* Firma FTK Lab */
+.ftk-signature{margin-top:24px;padding-top:18px;border-top:1px solid rgba(184,201,216,.18);font-size:.88rem;letter-spacing:.02em;color:var(--muted)}
+.ftk-signature a{display:inline-block;margin-left:4px;color:#fff;font-weight:900;letter-spacing:.05em;text-decoration:none;position:relative}
+.ftk-signature a::after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:2px;background:linear-gradient(90deg,#fff 0 33%,#ef6f73 33% 66%,#111 66% 100%);border-radius:999px;transform:scaleX(.72);transform-origin:center;transition:transform .2s ease}
+.ftk-signature a:hover::after{transform:scaleX(1)}
