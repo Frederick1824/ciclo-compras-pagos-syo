@@ -65,3 +65,9 @@
 .ftk-signature a{display:inline-block;margin-left:4px;color:#fff;font-weight:900;letter-spacing:.05em;text-decoration:none;position:relative}
 .ftk-signature a::after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:2px;background:linear-gradient(90deg,#fff 0 33%,#ef6f73 33% 66%,#111 66% 100%);border-radius:999px;transform:scaleX(.72);transform-origin:center;transition:transform .2s ease}
 .ftk-signature a:hover::after{transform:scaleX(1)}
+
+/* Identidad institucional ISPC */
+.brand-with-logo{display:flex;align-items:center;gap:10px}
+.nav-ispc-logo{width:38px;height:38px;object-fit:contain;flex:0 0 auto;filter:drop-shadow(0 3px 8px rgba(0,0,0,.22))}
+.hero-ispc-logo{display:block;width:clamp(72px,7vw,96px);height:auto;object-fit:contain;margin:0 0 18px 0;filter:drop-shadow(0 8px 20px rgba(0,0,0,.30))}
+@media(max-width:720px){.nav-ispc-logo{width:32px;height:32px}.hero-ispc-logo{width:72px;margin-bottom:14px}}
